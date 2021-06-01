@@ -26,6 +26,7 @@ functions:
     timeout: 10
     provisionedConcurrency: 1
     environment:
+      NEW_RELIC_ACCOUNT_ID: # put your new relic account id, necesary for traces and errors nr features.
       NEW_RELIC_LAMBDA_HANDLER: handler.hello
       NEW_RELIC_LICENSE_KEY_SECRET: /pathto/secret/NEW_RELIC_LICENSE_KEY
     layers:
